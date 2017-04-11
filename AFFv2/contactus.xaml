@@ -1,0 +1,444 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="AFFv2.contactus"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+
+    <phone:PhoneApplicationPage.Resources>
+        <Storyboard x:Name="animation_fb" Completed="animation_fb_Completed">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="image">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-255.218"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="259.697"/>
+            </DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="textBlock">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-59.7"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.FontSize)" Storyboard.TargetName="textBlock">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="26.667"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="32"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="40"/>
+        	</DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="animation_tw" Completed="animation_tw_Completed">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="tw2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-255.218"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="tw1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="259.697"/>
+            </DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="textBlock1">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-59.7"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.FontSize)" Storyboard.TargetName="textBlock1">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="26.667"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="32"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="40"/>
+        	</DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="animation_yt" Completed="animation_yt_Completed">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="yt2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-255.218"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="yt1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="259.697"/>
+            </DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="textBlock2">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-59.7"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.FontSize)" Storyboard.TargetName="textBlock2">
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="20"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="26.667"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="32"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="40"/>
+        	</DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="sidebarin">
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="topbar">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="sidebar">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="grid">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="stackPanel">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="image">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="image1">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="textBlock">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="tw2">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="tw1">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="textBlock1">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="yt2">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="yt1">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="textBlock2">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="menuside">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="homebtn">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="newsbtn">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="contactbtn">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="aboutbtn">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="-279"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="2.654"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="image1">
+        		<DiscreteObjectKeyFrame KeyTime="0">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Collapsed</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="0:0:0.2">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="tw1">
+        		<DiscreteObjectKeyFrame KeyTime="0">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Collapsed</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="0:0:0.2">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="yt1">
+        		<DiscreteObjectKeyFrame KeyTime="0">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Collapsed</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="0:0:0.2">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="sidebarout">
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="topbar">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="sidebar">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="grid">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="stackPanel">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="image">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="image1">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="textBlock">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="tw2">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="tw1">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="textBlock1">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="yt2">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="yt1">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="textBlock2">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="menuside">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="homebtn">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="newsbtn">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="contactbtn">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="aboutbtn">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.173"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="yt1">
+        		<DiscreteObjectKeyFrame KeyTime="0">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="0:0:0.4">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Collapsed</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="tw1">
+        		<DiscreteObjectKeyFrame KeyTime="0">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="0:0:0.4">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Collapsed</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="image1">
+        		<DiscreteObjectKeyFrame KeyTime="0">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="0:0:0.4">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Collapsed</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="newsnavi" Completed="newsnavi_Completed">
+        	<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.GlobalOffsetZ)" Storyboard.TargetName="LayoutRoot">
+        		<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-1014.97"/>
+        	</DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        
+    </phone:PhoneApplicationPage.Resources>
+    <Grid x:Name="LayoutRoot" RenderTransformOrigin="0.5,0.5">
+    	<Grid.Projection>
+    		<PlaneProjection/>
+    	</Grid.Projection>
+    	<Grid.RenderTransform>
+    		<CompositeTransform/>
+    	</Grid.RenderTransform>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/source/bg.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="170"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <toolkit:GestureService.GestureListener>
+            <toolkit:GestureListener Flick="OnFlick"/>
+        </toolkit:GestureService.GestureListener>
+        <Image x:Name="topbar" Grid.Row="0" Grid.RowSpan="5" Source="/Assets/source/topbar.png" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image x:Name="sidebar" Grid.Row="0" Grid.RowSpan="5" Source="/Assets/source/sidebar3.png" Stretch="UniformToFill" Margin="396,0,-396,0" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Grid x:Name="grid" Grid.Row="1" Grid.RowSpan="4" Background="#3d9ef0" Margin="10,30,10,50" Opacity="0.1" RenderTransformOrigin="0.5,0.5">
+        	<Grid.RenderTransform>
+        		<CompositeTransform/>
+        	</Grid.RenderTransform>
+        </Grid>
+        <StackPanel x:Name="stackPanel" Width="200" Grid.Row="0" Grid.RowSpan="2"  HorizontalAlignment="Left"  VerticalAlignment="Center" Background="#53b2f6" RenderTransformOrigin="0.5,0.5">
+        	<StackPanel.RenderTransform>
+        		<CompositeTransform/>
+        	</StackPanel.RenderTransform>
+            <TextBlock Foreground="White" Text="Contact us" HorizontalAlignment="Center" FontSize="25" FontFamily="Segoe UI" FontWeight="Light" VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <Image x:Name="image" Tap="image_Tap" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,121,0" Source="/Assets/contact us/fb1.png"  Height="100" RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="image1" Tap="image_Tap" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="121,0,0,0" Source="/Assets/contact us/fb2.png"  Height="100" RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock x:Name="textBlock"  Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,140,0,0" Foreground="#00549f" Text="FACEBOOK" RenderTransformOrigin="0.5,0.5" >
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+
+        <Image x:Name="tw2" Tap="tw2_Tap" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,121,0" Source="/Assets/contact us/tw2.png"  Height="100" RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="tw1" Tap="tw2_Tap" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="121,0,0,0" Source="/Assets/contact us/tw1.png"  Height="100" RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock x:Name="textBlock1"  Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,140,0,0" Foreground="#2caae1" Text="TWITTER" RenderTransformOrigin="0.5,0.5" >
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+
+        <Image x:Name="yt2" Tap="yt2_Tap" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,121,0" Source="/Assets/contact us/yt2.png"  Height="100" RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="yt1" Tap="yt2_Tap" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="121,0,0,0" Source="/Assets/contact us/yt1.png"  Height="100" RenderTransformOrigin="0.5,0.5" >
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock x:Name="textBlock2"  Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,140,0,0" Foreground="#dd2a27" Text="YOUTUBE" RenderTransformOrigin="0.5,0.5" >
+        	<TextBlock.RenderTransform>
+        		<CompositeTransform/>
+        	</TextBlock.RenderTransform>
+        </TextBlock>
+
+        <!--Sidebar-->
+        <Path x:Name="menuside" Data="M405,5 L470,5 L470,67 L406,67 z" HorizontalAlignment="Left" Height="63" Margin="404.5,4.5,0,0" Stretch="Fill" UseLayoutRounding="False" VerticalAlignment="Top" Width="66" Fill="White" Opacity="0" Tap="menuside_Tap" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <CompositeTransform/>
+            </Path.RenderTransform>
+        </Path>
+        <Path x:Name="homebtn" Data="M507,129 L734,129 L734,195 L507,195 z" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="67" Margin="506.5,128.5,-254.5,0" Stretch="Fill" UseLayoutRounding="False" VerticalAlignment="Top" Width="228" Grid.RowSpan="2" Opacity="0" RenderTransformOrigin="0.5,0.5" Tap="homebtn_Tap">
+            <Path.RenderTransform>
+                <CompositeTransform/>
+            </Path.RenderTransform>
+        </Path>
+        <Path x:Name="newsbtn" Data="M507,129 L734,129 L734,195 L507,195 z" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="67" Margin="506.5,45.5,-254.5,0" Stretch="Fill" UseLayoutRounding="False" VerticalAlignment="Top" Width="228" Opacity="0" Grid.Row="1" RenderTransformOrigin="0.5,0.5" Tap="newsbtn_Tap">
+            <Path.RenderTransform>
+                <CompositeTransform/>
+            </Path.RenderTransform>
+        </Path>
+        <Path x:Name="contactbtn" Data="M507,129 L734,129 L734,195 L507,195 z" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="67" Margin="506.5,132.5,-254.5,0" Stretch="Fill" UseLayoutRounding="False" VerticalAlignment="Top" Width="228" Opacity="0" Grid.Row="1" RenderTransformOrigin="0.5,0.5" Tap="contactbtn_Tap">
+            <Path.RenderTransform>
+                <CompositeTransform/>
+            </Path.RenderTransform>
+        </Path>
+        <Path x:Name="aboutbtn" Data="M507,129 L734,129 L734,195 L507,195 z" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="67" Margin="506.5,216.5,-254.5,0" Stretch="Fill" UseLayoutRounding="False" VerticalAlignment="Top" Width="228" Opacity="0" Grid.Row="1" Grid.RowSpan="3" RenderTransformOrigin="0.5,0.5" Tap="aboutbtn_Tap">
+            <Path.RenderTransform>
+                <CompositeTransform/>
+            </Path.RenderTransform>
+        </Path>
+    </Grid>
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:SlideTransition  Mode="SlideDownFadeIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:SlideTransition Mode="SlideRightFadeIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:SlideTransition Mode="SlideLeftFadeOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:SlideTransition Mode="SlideUpFadeOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+</phone:PhoneApplicationPage>

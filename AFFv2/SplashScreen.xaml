@@ -1,0 +1,44 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="AFFv2.SplashScreen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+	<phone:PhoneApplicationPage.Resources>
+		<Storyboard x:Name="splashanimation" Completed="splashanimation_Completed">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)" Storyboard.TargetName="splash2">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="30"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="75"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="180"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="splash2">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="179"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</phone:PhoneApplicationPage.Resources>
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/source/splash1.png"/>
+        </Grid.Background>
+        <Image x:Name="splash2" Source="/Assets/source/splash2.png" Stretch="UniformToFill" RenderTransformOrigin="0.496,0.45">
+        	<Image.Projection>
+        		<PlaneProjection/>
+        	</Image.Projection>
+        	<Image.RenderTransform>
+        		<CompositeTransform/>
+        	</Image.RenderTransform>
+        </Image>
+    </Grid>
+
+</phone:PhoneApplicationPage>

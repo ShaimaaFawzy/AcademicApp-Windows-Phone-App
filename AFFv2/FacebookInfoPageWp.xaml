@@ -1,0 +1,67 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="AFFv2.FacebookInfoPageWp"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True"
+ Loaded="PhoneApplicationPage_Loaded">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/Assets/source/bg.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="160"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Grid.RowSpan="2" >
+
+            <Image x:Name="topbar" Grid.Row="0" Source="/Assets/source/topbar.png" Stretch="UniformToFill" Height="818" Margin="-15,0,0,0"/>
+        </StackPanel>
+        <StackPanel x:Name="stackPanel" Width="200" Grid.Row="1"   HorizontalAlignment="Left"  VerticalAlignment="Top" Background="#53b2f6" RenderTransformOrigin="0.5,0.5" Height="34">
+            <StackPanel.RenderTransform>
+                <CompositeTransform/>
+            </StackPanel.RenderTransform>
+            <TextBlock Foreground="White" Text="Facebook" HorizontalAlignment="Center" FontSize="25" FontFamily="Segoe UI" FontWeight="Light" VerticalAlignment="Center"/>
+        </StackPanel>
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" MinHeight="200"/>
+                    <RowDefinition Height="Auto" MinHeight="327"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image x:Name="picProfile" Width="100" HorizontalAlignment="Left" Margin="0,50" />
+                <StackPanel  Grid.Column="1" Margin="8,50,0,0">
+                    <TextBlock Foreground="Black" x:Name="ProfileName"></TextBlock>
+                    <TextBlock  Foreground="Black" x:Name="TotalFriends"></TextBlock>
+                    <TextBlock  Foreground="Black" x:Name="FirstName"></TextBlock>
+                    <TextBlock  Foreground="Black" x:Name="LastName"></TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.ColumnSpan="3" Margin="0,5,0,0">
+                    <TextBox BorderThickness="5,5,5,5" Height="250" x:Name="txtMessage" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" BorderBrush="#FF3D8FC9"></TextBox>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Width="200" Content="post" Click="PostToWall_Click" BorderBrush="#FF3D8FC9" Foreground="#FF3D8FC9"/>
+                        <Button Width="200" FontSize="20"  BorderBrush="#FF3D8FC9" Content="delete" IsEnabled="True" Click="DeleteLastMessage_Click" x:Name="btnDeleteLastMessage" Foreground="#FF3D8FC9"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

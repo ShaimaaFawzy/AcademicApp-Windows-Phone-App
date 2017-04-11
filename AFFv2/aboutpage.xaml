@@ -1,0 +1,179 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="AFFv2.aboutpage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+    <phone:PhoneApplicationPage.Resources>
+        <Storyboard x:Name="sidebarout">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="sidebar">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-268.1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="stackPanel">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-268.1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="menuside">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-266.542"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="homebtn">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-266.542"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="newsbtn">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-266.542"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="contactbtn">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-266.542"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="aboutbtn">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-266.542"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="sidebarin">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="sidebar">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-268.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="stackPanel">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-268.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="menuside">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-267.157"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.498"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="homebtn">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-267.157"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.498"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="newsbtn">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-267.157"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.498"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="contactbtn">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-267.157"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.498"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="aboutbtn">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-267.157"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.498"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="newsnavi" Completed="newsnavi_Completed">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.GlobalOffsetZ)" Storyboard.TargetName="LayoutRoot">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-1014.97"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </phone:PhoneApplicationPage.Resources>
+    <Grid x:Name="LayoutRoot">
+        <Grid.Projection>
+            <PlaneProjection/>
+        </Grid.Projection>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/source/bg.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="73"/>
+            <RowDefinition Height="178*"/>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="529*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <toolkit:GestureService.GestureListener>
+            <toolkit:GestureListener Flick="OnFlick"/>
+        </toolkit:GestureService.GestureListener>
+        <StackPanel Grid.Row="1">
+            <TextBlock Margin="60"  Foreground="Black"  Width="Auto" TextWrapping="Wrap" Height="Auto" FontWeight="Bold" Text="This Application is the official Application for Academic AppFactory Program you can see the academic applications and download it" />
+
+
+        </StackPanel>
+        <StackPanel Grid.Row="3">
+            <TextBlock FontWeight="Bold" Text="This Application Supervised By :"  Foreground="#FF64B9F6" Height="Auto" Margin="10"/>
+            <TextBlock FontWeight="Bold"  Foreground="Black" Height="Auto" Margin="10,4">
+            	<Run Text="Ahmed Abd El Mageed -"/>
+            	<LineBreak/>
+            	<Run Text="Egypt AppFactory Lead"/>
+            </TextBlock>
+            <TextBlock  FontWeight="Bold"  Width="Auto" TextWrapping="Wrap" Foreground="Black" Height="Auto" Margin="10,4">
+            	<Run Text="Shaimaa Fawzy - "/>
+            	<LineBreak/>
+            	<Run Text="Academic AppFactory Technical Manager"/>
+            </TextBlock>
+            <TextBlock  FontWeight="Bold"  Width="Auto" TextWrapping="Wrap" Foreground="Black" Height="Auto" Margin="10,4">
+            <Run Text="Abeer El Assal "/>
+            <LineBreak/>
+            <Run Text="Academic AppFactory Program Manager"/>
+            </TextBlock>
+            <TextBlock FontWeight="Bold" Text="This Application Developed By :"  Foreground="#FF64B9F6" Height="Auto" Margin="10,-2"/>
+            <TextBlock FontWeight="Bold"  Foreground="Black" Height="Auto" Margin="10,-1,220,-1">
+            	<Run Text="Hassn Medhat"/>
+            	<LineBreak/>
+                <Run Text="Mohamed Ahmed "/>
+            	<LineBreak/>
+            	<Run Text="Shahed Timour"/>
+            	<LineBreak/>
+            	<Run Text="Mohamed Hamid"/>
+            	<LineBreak/>
+            	
+            	<Run Text="Ahmed Hossam Alhansy"/>
+            	<LineBreak/>
+            	<Run Text="Basma Alaa"/>
+            	<LineBreak/>
+            	<Run Text="Kareem Diaa El deen"/>
+            </TextBlock>
+            <TextBlock FontWeight="Bold"  Foreground="#FF64B9F6" Height="Auto" Margin="10,10,220,10">
+            	<Run Text="Designed By : Amr Fakhri"/>
+            	<LineBreak/>
+            	<Run/>
+            </TextBlock>
+            <Image Height="80" Margin="350,-300,10,0" Source="/Assets/App Factory Final Logo Blue.png" Stretch="Fill"/>
+            <Image Height="100" Margin="350,-100,10,0" Source="/Assets/aboutaaf.png" Stretch="Fill"/>
+
+
+        </StackPanel>
+        <StackPanel x:Name="stackPanel" Width="200" Grid.Row="1"  HorizontalAlignment="Left"  VerticalAlignment="Center" Background="#53b2f6" RenderTransformOrigin="0.5,0.5" Height="34" Margin="0,12,0,132">
+            <StackPanel.RenderTransform>
+                <CompositeTransform/>
+            </StackPanel.RenderTransform>
+            <TextBlock Foreground="White" Text="About" HorizontalAlignment="Center" FontSize="25" FontFamily="Segoe UI" FontWeight="Light" VerticalAlignment="Center"/>
+        </StackPanel>
+           
+    </Grid>
+
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:SlideTransition  Mode="SlideDownFadeIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:SlideTransition Mode="SlideRightFadeIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:SlideTransition Mode="SlideLeftFadeOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:SlideTransition Mode="SlideUpFadeOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+</phone:PhoneApplicationPage>

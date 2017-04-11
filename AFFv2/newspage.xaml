@@ -1,0 +1,198 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="AFFv2.newspage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False">
+    <phone:PhoneApplicationPage.Resources>
+        <Storyboard x:Name="sidebarout">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="topbar">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-251.557"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="sidebar">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-275.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="Stack_store">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-423"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-758.377"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="Stack_phone">
+                <EasingDoubleKeyFrame KeyTime="0" Value="435"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="99.622"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="menuside">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-272.58"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="homebtn">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-267"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="newsbtn">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-267"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="contactbtn">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-267"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="aboutbtn">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-267"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="sidebarin">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="topbar">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-252"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="sidebar">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-275.985"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="Stack_store">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-758.964"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-423"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="Stack_phone">
+                <EasingDoubleKeyFrame KeyTime="0" Value="99.036"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="435"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="menuside">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-273"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="homebtn">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-267"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-12"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="newsbtn">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-267"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-12"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="contactbtn">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-267"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-12"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="aboutbtn">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-267"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-12"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="newsnavi" Completed="newsnavi_Completed">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.GlobalOffsetZ)" Storyboard.TargetName="LayoutRoot">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-1014.97"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+   
+    </phone:PhoneApplicationPage.Resources>
+    <Grid x:Name="LayoutRoot">
+        <Grid.Projection>
+            <PlaneProjection/>
+        </Grid.Projection>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="/Assets/source/bg.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="170"/>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="69*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="40*"/>
+        </Grid.RowDefinitions>
+        <toolkit:GestureService.GestureListener>
+            <toolkit:GestureListener Flick="OnFlick"/>
+        </toolkit:GestureService.GestureListener>
+        <Image x:Name="topbar" Grid.Row="0" Grid.RowSpan="6" Source="/Assets/source/topbar.png" Stretch="UniformToFill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image x:Name="sidebar" Grid.Row="0" Grid.RowSpan="6" Source="/Assets/source/sidebar3.png" Stretch="UniformToFill" Margin="396,0,-396,0" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform/>
+            </Image.RenderTransform>
+        </Image>
+        <Grid x:Name="grid" Background="#53b2f6" Opacity="0.1" Grid.Row="2" Grid.RowSpan="4" Height="550" HorizontalAlignment="Left" Margin="20,6.528,0,0" VerticalAlignment="Top" Width="444" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <CompositeTransform/>
+            </Grid.RenderTransform>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="79*"/>
+                <ColumnDefinition Width="143*"/>
+            </Grid.ColumnDefinitions>
+
+        </Grid>
+        <StackPanel  Grid.RowSpan="4" Margin="0,6,0,0" Grid.Row="2">
+            <phone:WebBrowser  Width="Auto" Height="577" Grid.RowSpan="3" Source="http://www.microsoft.com/africa/4afrika/appfactory_egypt.aspx"    />
+        </StackPanel>
+        <StackPanel x:Name="stackPanel" Width="200" Grid.Row="1"   HorizontalAlignment="Left"  VerticalAlignment="Top" Background="#53b2f6" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+            <StackPanel.RenderTransform>
+                <CompositeTransform/>
+            </StackPanel.RenderTransform>
+            <TextBlock Foreground="White" Text="News" HorizontalAlignment="Center" FontSize="25" FontFamily="Segoe UI" FontWeight="Light" VerticalAlignment="Center"/>
+        </StackPanel>
+        <Path x:Name="menuside" Data="M405,5 L470,5 L470,67 L406,67 z" HorizontalAlignment="Left" Height="63" Margin="404.5,4.5,0,0" Stretch="Fill" UseLayoutRounding="False" VerticalAlignment="Top" Width="66" Fill="White" Opacity="0" Tap="menuside_Tap" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <CompositeTransform/>
+            </Path.RenderTransform>
+        </Path>
+        <Path x:Name="homebtn" Data="M507,129 L734,129 L734,195 L507,195 z" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="67" Margin="506.5,128.5,-254.5,0" Stretch="Fill" UseLayoutRounding="False" VerticalAlignment="Top" Width="228" Grid.RowSpan="2" Opacity="0" RenderTransformOrigin="0.5,0.5" Tap="homebtn_Tap">
+            <Path.RenderTransform>
+                <CompositeTransform/>
+            </Path.RenderTransform>
+        </Path>
+        <Path x:Name="newsbtn" Data="M507,129 L734,129 L734,195 L507,195 z" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="67" Margin="506.5,12.028,-254.5,0" Stretch="Fill" UseLayoutRounding="False" VerticalAlignment="Top" Width="228" Opacity="0" Grid.Row="2" RenderTransformOrigin="0.5,0.5" Tap="newsbtn_Tap">
+            <Path.RenderTransform>
+                <CompositeTransform/>
+            </Path.RenderTransform>
+        </Path>
+        <Path x:Name="contactbtn" Data="M507,129 L734,129 L734,195 L507,195 z" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="67" Margin="506.5,99.028,-254.5,0" Stretch="Fill" UseLayoutRounding="False" VerticalAlignment="Top" Width="228" Opacity="0" Grid.Row="2" RenderTransformOrigin="0.5,0.5" Tap="contactbtn_Tap">
+            <Path.RenderTransform>
+                <CompositeTransform/>
+            </Path.RenderTransform>
+        </Path>
+        <Path x:Name="aboutbtn" Data="M507,129 L734,129 L734,195 L507,195 z" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="67" Margin="506.5,183.028,-254.5,0" Stretch="Fill" UseLayoutRounding="False" VerticalAlignment="Top" Width="228" Opacity="0" Grid.Row="2" Grid.RowSpan="3" RenderTransformOrigin="0.5,0.5" Tap="aboutbtn_Tap">
+            <Path.RenderTransform>
+                <CompositeTransform/>
+            </Path.RenderTransform>
+        </Path>
+
+    </Grid>
+
+
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:SlideTransition  Mode="SlideDownFadeIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:SlideTransition Mode="SlideRightFadeIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:SlideTransition Mode="SlideLeftFadeOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:SlideTransition Mode="SlideUpFadeOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+</phone:PhoneApplicationPage>
