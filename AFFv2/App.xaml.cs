@@ -14,7 +14,7 @@ namespace AFFv2
     public partial class App : Application
     {
   
-        public static MobileServiceClient MobileService = new MobileServiceClient(
+        public static MobileServiceClient MobileService = new MobileServiceClient(  
 );
         /// <summary>
         /// Provides easy access to the root frame of the Phone Application.
